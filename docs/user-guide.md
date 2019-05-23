@@ -255,7 +255,7 @@ Result `ContractFactory` **Object**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 // the abi
 const SimpleStoreABI = JSON
@@ -297,7 +297,7 @@ Result a single Promise **Object** instance.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 // the abi
 const SimpleStoreABI = JSON
@@ -333,7 +333,7 @@ Result a single `Contract` **Object** instance.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 // the abi
 const SimpleStoreABI = JSON
@@ -378,7 +378,7 @@ You will notice the `simpleStore` instance makes all these methods available to 
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 // the abi
 const SimpleStoreABI = JSON
@@ -468,14 +468,14 @@ Intakes a `provider` URL specified as a string, and optionally the `timeout` spe
 
 **Parameters**
 
--   `provider` **String** the URL path to your local Http RPC enabled Ethereum node (e.g. `http://localhost:8545`) or a service node system like [Infura.io](http://infura.io) (e.g. `http://ropsten.infura.io`).
+-   `provider` **String** the URL path to your local Http RPC enabled Ethereum node (e.g. `http://localhost:11363`)
 -   `timeout` **Number** [optional] the time in seconds that an XHR2 request will wait until it times out.
 
 Result `HttpProvider` **Object**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.accounts((err, result) => {
   // result null ['0xd89b8a74c153f0626497bc4a531f702...', ...]
@@ -510,7 +510,7 @@ Used to manage Ethereum event listening and filtering.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new HttpProvider('http://localhost:8545'));
+const eth = new Eth(new HttpProvider('http://localhost:gpuffs'));
 
 const filter = new eth.filters.Filter({ delay: 300 })
 .new({ toBlock: 500 })
@@ -571,7 +571,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:gpuffs'));
 
 eth.web3_clientVersion()
 .then((result) => {
