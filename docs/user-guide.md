@@ -571,7 +571,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:gpuffs'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.web3_clientVersion()
 .then((result) => {
@@ -602,7 +602,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.web3_sha3("0.1.6")
 .then((result) => {
@@ -632,7 +632,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.net_version()
 .then((result) => {
@@ -662,7 +662,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.net_peerCount()
 .then((result) => {
@@ -692,7 +692,7 @@ Result **Boolean**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.net_listening()
 .then((result) => {
@@ -722,7 +722,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.protocolVersion()
 .then((result) => {
@@ -752,7 +752,7 @@ Result **"Boolean|EthSyncing"**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.syncing()
 .then((result) => {
@@ -782,7 +782,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.coinbase()
 .then((result) => {
@@ -812,7 +812,7 @@ Result **Boolean**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.mining()
 .then((result) => {
@@ -842,7 +842,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.hashrate()
 .then((result) => {
@@ -872,7 +872,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.gasPrice()
 .then((result) => {
@@ -902,7 +902,7 @@ Result an **Array** of strings.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.accounts()
 .then((result) => {
@@ -932,7 +932,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.blockNumber()
 .then((result) => {
@@ -964,7 +964,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getBalance("0x6e0E0e02377Bc1d90E8a7c21f12BA385C2C35f78", <BN ...>)
 .then((result) => {
@@ -997,7 +997,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getStorageAt("0x6e0E0e02377Bc1d90E8a7c21f12BA385C2C35f78", <BN ...>, <BN ...>)
 .then((result) => {
@@ -1029,7 +1029,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getTransactionCount("0x6e0E0e02377Bc1d90E8a7c21f12BA385C2C35f78", <BN ...>)
 .then((result) => {
@@ -1060,7 +1060,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getBlockTransactionCountByHash("0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbab45")
 .then((result) => {
@@ -1091,7 +1091,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getBlockTransactionCountByNumber(<BN ...>)
 .then((result) => {
@@ -1122,7 +1122,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getUncleCountByBlockHash("0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbab45")
 .then((result) => {
@@ -1153,7 +1153,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getUncleCountByBlockNumber(<BN ...>)
 .then((result) => {
@@ -1185,7 +1185,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getCode("0x6e0E0e02377Bc1d90E8a7c21f12BA385C2C35f78", <BN ...>)
 .then((result) => {
@@ -1217,7 +1217,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.sign("0x6e0E0e02377Bc1d90E8a7c21f12BA385C2C35f78", "0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbab45")
 .then((result) => {
@@ -1248,7 +1248,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.sendTransaction({
   from: '0x6e0E0e02377Bc1d90E8a7c21f12BA385C2C35f78',
@@ -1285,7 +1285,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.sendRawTransaction("0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbabd40cb8da3")
 .then((result) => {
@@ -1317,7 +1317,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.call({
   from: '0x6e0E0e02377Bc1d90E8a7c21f12BA385C2C35f78',
@@ -1355,7 +1355,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.estimateGas({
   from: '0x6e0E0e02377Bc1d90E8a7c21f12BA385C2C35f78',
@@ -1392,7 +1392,7 @@ Result Block **Object**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getBlockByHash("0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbab45", true)
 .then((result) => {
@@ -1444,7 +1444,7 @@ Result Block **Object**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getBlockByNumber(<BN ...>, true)
 .then((result) => {
@@ -1495,7 +1495,7 @@ Result Transaction **Object**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getTransactionByHash("0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbab45")
 .then((result) => {
@@ -1539,7 +1539,7 @@ Result Transaction **Object**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getTransactionByBlockHashAndIndex("0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbab45", <BN ...>)
 .then((result) => {
@@ -1583,7 +1583,7 @@ Result Transaction **Object**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getTransactionByBlockNumberAndIndex(<BN ...>, <BN ...>)
 .then((result) => {
@@ -1626,7 +1626,7 @@ Result receipt **Object**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getTransactionReceipt("0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbab45")
 .then((result) => {
@@ -1676,7 +1676,7 @@ Result Block **Object**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getUncleByBlockHashAndIndex("0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbab45", <BN ...>)
 .then((result) => {
@@ -1728,7 +1728,7 @@ Result Block **Object**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getUncleByBlockNumberAndIndex(<BN ...>, <BN ...>)
 .then((result) => {
@@ -1778,7 +1778,7 @@ Result an **Array** of strings.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getCompilers()
 .then((result) => {
@@ -1809,7 +1809,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.compileLLL("0.1.6")
 .then((result) => {
@@ -1840,7 +1840,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.compileSolidity("0.1.6")
 .then((result) => {
@@ -1871,7 +1871,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.compileSerpent("0.1.6")
 .then((result) => {
@@ -1902,7 +1902,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.newFilter({
   fromBlock: '1',
@@ -1937,7 +1937,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.newBlockFilter()
 .then((result) => {
@@ -1967,7 +1967,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.newPendingTransactionFilter()
 .then((result) => {
@@ -1998,7 +1998,7 @@ Result **Boolean**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.uninstallFilter(<BN ...>)
 .then((result) => {
@@ -2029,7 +2029,7 @@ Result an **Array** of filter change objects..
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getFilterChanges(<BN ...>)
 .then((result) => {
@@ -2070,7 +2070,7 @@ Result an **Array** of filter change objects..
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getFilterLogs(<BN ...>)
 .then((result) => {
@@ -2111,7 +2111,7 @@ Result **Array**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getLogs({
   fromBlock: '1',
@@ -2156,7 +2156,7 @@ Result an **Array** of strings.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.getWork()
 .then((result) => {
@@ -2189,7 +2189,7 @@ Result **Boolean**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.submitWork("0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbabd40cb8da3", "0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbab45", "0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbab45")
 .then((result) => {
@@ -2221,7 +2221,7 @@ Result **Boolean**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.submitHashrate("0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbabd40cb8da3", "0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbabd40cb8da3")
 .then((result) => {
@@ -2254,7 +2254,7 @@ Result **Boolean**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.db_putString("0.1.6", "0.1.6", "0.1.6")
 .then((result) => {
@@ -2286,7 +2286,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.db_getString("0.1.6", "0.1.6")
 .then((result) => {
@@ -2319,7 +2319,7 @@ Result **Boolean**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.db_putHex("0.1.6", "0.1.6", "0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbabd40cb8da3")
 .then((result) => {
@@ -2351,7 +2351,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.db_getHex("0.1.6", "0.1.6")
 .then((result) => {
@@ -2382,7 +2382,7 @@ Result **Boolean**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.shh_post({
   from: '0x04f96a5e25610293e42a73908e93ccc8c4d4dc0edcfa9fa872f50cb214e08ebf61a03e245533f97284d442460f2998cd41858798ddfd4d661997d3940272b717b1',
@@ -2419,7 +2419,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.shh_version()
 .then((result) => {
@@ -2449,7 +2449,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.shh_newIdentity()
 .then((result) => {
@@ -2480,7 +2480,7 @@ Result **Boolean**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.shh_hasIdentity("0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbabd40cb8da3")
 .then((result) => {
@@ -2510,7 +2510,7 @@ Result **String**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.shh_newGroup()
 .then((result) => {
@@ -2541,7 +2541,7 @@ Result **Boolean**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.shh_addToGroup("0xbf2b4596cbd1511f4a6ef8af06d03354f53cb8aa9508a6810b6f93d8bccbabd40cb8da3")
 .then((result) => {
@@ -2572,7 +2572,7 @@ Result **BN**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.shh_newFilter({
    topics: ['0x12341234bf4b564f'],
@@ -2606,7 +2606,7 @@ Result **Boolean**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.shh_uninstallFilter(<BN ...>)
 .then((result) => {
@@ -2637,7 +2637,7 @@ Result **["SHHFilterChange"]**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.shh_getFilterChanges(<BN ...>)
 .then((result) => {
@@ -2678,7 +2678,7 @@ Result **["SHHFilterChange"]**.
 
 ```js
 const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('http://localhost:8545'));
+const eth = new Eth(new Eth.HttpProvider('http://localhost:11363'));
 
 eth.shh_getMessages(<BN ...>)
 .then((result) => {
@@ -2746,15 +2746,15 @@ https://polyfill.io/
 ## Other Awesome Modules, Tools and Frameworks
 
 ### **Ethereum Foundation**
-  - [web3.js](https://github.com/ethereum/web3.js) -- the original Ethereum JS swiss army knife
-  - [ethereumjs](https://github.com/ethereumjs) -- critical ethereum javascript infrastructure/community
+  - [web3.js](https://github.com/puffscoin/web3.js) -- the  PUFFScoin JS swiss army knife
+  - [ethereumjs](https://github.com/puffscoin/puffscoinjs-common) -- critical puffscoin javascript infrastructure
   - [browser-solidity](https://ethereum.github.io/browser-solidity) -- an in browser Solidity IDE
-  - [mists](https://github.com/ethereum/mist/releases) -- the official Ethereum wallet and browser
+  - [mist](https://github.com/puffscoin/mist/releases) -- the official Puffscoin wallet and browser
 
 ### Nodes
-  - [geth](https://github.com/ethereum/go-ethereum) Go-Ethereum (Ethereum Foundation)
-  - [parity](https://github.com/ethcore/parity) Rust-Ethereum build in Rust (Ethcore)
-  - [testrpc](https://github.com/ethereumjs/testrpc) JS-Testing Node (Ethereumjs)
+  - [gpuffs](https://github.com/puffscoin/go-puffscoin) Go-Ethereum (Ethereum Foundation)
+  - [parity](https://github.com/puffscoin/parity) Rust-Puffscoin build in Rust (Ethcore) [TODO]
+  
 
 ### Testing
   - [truffle](https://github.com/ConsenSys/truffle) -- a solidity/js dApp framework
@@ -2765,12 +2765,11 @@ https://polyfill.io/
   - [embark](https://github.com/iurimatias/embark-framework) -- a solidity/js dApp framework
 
 ### Wallets
-  - [mist](https://github.com/ethereum/mist/releases) -- turns your browser into an Ethereum enabled browser =D
-  - [geth](https://github.com/ethereum/go-ethereum) -- standard Ethereum wallet
-  - [parity](https://github.com/ethcore/parity) -- standard Ethereum wallet
-  - [ethers-wallet](https://github.com/ethers-io/ethers-wallet) -- an amazingly small Ethereum wallet
-  - [metamask](https://metamask.io/) -- turns your browser into an Ethereum enabled browser =D, a one click install **Chrome Extention**
-  - [eth-lightwallet](https://github.com/ConsenSys/eth-lightwallet) -- an HD wallet built in Javascript
+  - [mist](https://github.com/puffscoin/mist/releases) -- turns your browser into an PUFFScoin enabled browser
+  - [geth](https://github.com/puffscoin/go-puffscoin) -- standard PUFFScoin wallet
+  - [parity](https://github.com/ethcore/parity) -- standard PUFFScoin wallet for Parity
+  - [metamask](https://metamask.io/) -- turns your browser into an PUFFScoin enabled browser, a one click install **Chrome Extention**
+  
 
 ## Our Relationship with Ethereum & EthereumJS
 
