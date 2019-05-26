@@ -1,24 +1,24 @@
 # User Guide
 
-All information for developers using `ethjs` should consult this document.
+All information for developers using `puffsjs` should consult this document.
 
 ## Install
 
 ```
-npm install --save ethjs
+npm install --save puffsjs
 ```
 
 ## Usage
 
 ```js
-const Eth = require('ethjs');
-const eth = new Eth(new Eth.HttpProvider('https://ropsten.infura.io'));
+const Puffs = require('puffsjs');
+const puffs = new Puffs(new Puffs.HttpProvider('https://ropsten.infura.io'));
 
-eth.getBlockByNumber(45300, (err, block) => {
+puffs.getBlockByNumber(420, (err, block) => {
   // result null { ...block data... }
 });
 
-const etherValue = Eth.toWei(72, 'ether');
+const puffsValue = Puffs.toWei(72, 'puffs');
 
 // result <BN ...>
 
