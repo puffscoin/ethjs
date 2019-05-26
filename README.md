@@ -13,18 +13,18 @@ npm install --save puffsjs
 ## CDN
 
 ```
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/puffsjs@0.3.4/dist/ethjs.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/puffsjs@0.3.4/dist/puffsjs.min.js"></script>
 ```
 
-Note, exports to `window.Eth` global.
+Note, exports to `window.Puffs` global.
 
 ## Usage
 
 ```js
 const Puffs = require('puffsjs');
-const eth = new Puffs(new Puffs.HttpProvider('https://ropsten.infura.io'));
+const puffs = new Puffs(new Puffs.HttpProvider('https://ropsten.infura.io'));
 
-eth.getBlockByNumber(45300, true, (err, block) => {
+puffs.getBlockByNumber(45300, true, (err, block) => {
   // result null { ...block data... }
 });
 
@@ -41,13 +41,13 @@ const tokenABI = [{
   "type": "function",
 }];
 
-const token = eth.contract(tokenABI).at('0x6e0E0e02377Bc1d90E8a7c21f12BA385C2C35f78');
+const token = puffs.contract(tokenABI).at('0x6e0E0e02377Bc1d90E8a7c21f12BA385C2C35f78');
 
 token.totalSupply().then((totalSupply) => {
   // result <BN ...>  4500000
 });
 
-// token.transfer( ... ).then(txHash => eth.getTransactionSuccess(txHash)).then(receipt => console.log(receipt));
+// token.transfer( ... ).then(txHash => puffs.getTransactionSuccess(txHash)).then(receipt => console.log(receipt));
 ```
 
 ## About
